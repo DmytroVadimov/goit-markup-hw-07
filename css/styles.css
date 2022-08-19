@@ -955,16 +955,13 @@ border-color: var(--act-link-txt);
 .injection-policy {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
         
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
     color: var(--hd-cont-txt);
-}
-
-.injection-policy:focus {
-    color: var(--act-link-txt);
 }
 
 .check-box {
@@ -977,10 +974,15 @@ border-color: var(--act-link-txt);
     height: 15px;
     border: 2px solid var(--pas-txt);
     border-radius: 2px;
+    transition: border-color var(--trnstn);
 }
 
 .check-icon {
     fill: transparent;
+}
+
+.injection-check:focus + .injection-policy .check-box {
+    border-color: var(--act-link-txt);
 }
 
 .injection-check:checked + .injection-policy .check-box {
@@ -993,12 +995,8 @@ border-color: var(--act-link-txt);
 }
 
 .injection-link {
-    transition: color var(--trnstn);
-}
-
-.injection-link:focus {
     color: var(--act-link-txt);
-    }
+}
 
 .injection-button {
     width: 200px;
