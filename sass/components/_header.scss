@@ -1,10 +1,10 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-    background: var(--act-btn-txt);    
-    }
-
-.header .container { 
+    background: var(--act-btn-txt);
+    
+    .container { 
     display: flex;
+    }
     }
 
 .header-logo {
@@ -46,17 +46,17 @@
         letter-spacing: 0.02em;
         color: var(--pas-txt);
 
-        transition: color var(--trnstn);               
-        }
+        transition: color var(--trnstn);
+        
+        .current {
+    color: var(--act-link-txt);
+    }
+    }
 
 .header-link:hover,
 .header-link:focus {
     color: var(--act-link-txt);
 }
-
-.header-link.current {
-    color: var(--act-link-txt);
-    }
 
 .current {
     position: relative;

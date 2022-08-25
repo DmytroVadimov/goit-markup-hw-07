@@ -72,7 +72,6 @@ img {
   border-bottom: 1px solid #ECECEC;
   background: var(--act-btn-txt);
 }
-
 .header .container {
   display: flex;
 }
@@ -115,13 +114,12 @@ img {
   color: var(--pas-txt);
   transition: color var(--trnstn);
 }
-
-.header-link:hover,
-.header-link:focus {
+.header-link .current {
   color: var(--act-link-txt);
 }
 
-.header-link.current {
+.header-link:hover,
+.header-link:focus {
   color: var(--act-link-txt);
 }
 
@@ -425,15 +423,14 @@ img {
 .client-m-link:focus {
   border-color: var(--act-link-txt);
 }
+.client-m-link:hover .client-icon,
+.client-m-link:focus .client-icon {
+  fill: var(--act-link-txt);
+}
 
 .client-icon {
   fill: #afb1b8;
   transition: fill var(--trnstn);
-}
-
-.client-m-link:hover .client-icon,
-.client-m-link:focus .client-icon {
-  fill: var(--act-link-txt);
 }
 
 .portfolio {
@@ -560,7 +557,6 @@ img {
   padding-bottom: 60px;
   background-color: var(--sol-bcg);
 }
-
 .footer .container {
   display: flex;
   align-items: baseline;

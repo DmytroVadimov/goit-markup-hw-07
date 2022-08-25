@@ -70,15 +70,14 @@
 .team-social-link:hover,
 .team-social-link:focus {
     background-color: var(--act-link-txt);
+
+    .team-social-icon {
+            fill: var(--act-btn-txt);
+        }
 }
 
 .team-social-icon {
     fill: #afb1b8;
 
     transition: fill var(--trnstn);
-}
-
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
-    fill: var(--act-btn-txt);
 }

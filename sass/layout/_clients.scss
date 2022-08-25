@@ -34,6 +34,10 @@
 .client-m-link:hover,
 .client-m-link:focus {
     border-color: var(--act-link-txt);
+
+    .client-icon {
+        fill: var(--act-link-txt);
+        }
 }
 
 .client-icon {
@@ -42,7 +46,3 @@
     transition: fill var(--trnstn);
 }
 
-.client-m-link:hover .client-icon,
-.client-m-link:focus .client-icon {
-    fill: var(--act-link-txt);
-}

@@ -101,6 +101,9 @@
 
 .injection-field:focus {
     border-color: var(--act-link-txt);
+    +.injection-icon {
+            fill: var(--act-link-txt);
+        }
 }
 
 .injection-field::placeholder {
@@ -121,10 +124,6 @@
     top: 50%;
     transform: translateY(-50%);
     transition: fill var(--trnstn);
-}
-
-.injection-field:focus+.injection-icon {
-    fill: var(--act-link-txt);
 }
 
 .injection-textarea {
