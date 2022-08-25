@@ -21,10 +21,10 @@
     margin-right: 30px;
 
     position: relative;
-}
-
-.doing-item:last-child {
-    margin-right: 0;
+    
+    &:last-child {
+        margin-right: 0;
+        }
 }
 
 .doing-label {

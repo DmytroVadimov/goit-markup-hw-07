@@ -65,15 +65,15 @@
     justify-content: center;
 
     transition: background-color var(--trnstn);
-}
+    
+    &:hover,
+    &:focus {
+        background-color: var(--act-link-txt);
 
-.team-social-link:hover,
-.team-social-link:focus {
-    background-color: var(--act-link-txt);
-
-    .team-social-icon {
+        .team-social-icon {
             fill: var(--act-btn-txt);
         }
+    }
 }
 
 .team-social-icon {

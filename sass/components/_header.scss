@@ -5,7 +5,7 @@
     .container { 
     display: flex;
     }
-    }
+}
 
 .header-logo {
         margin-right: 93px;
@@ -18,22 +18,21 @@
         font-size: 26px;
         line-height: calc(31/26);          
         color: var(--pas-txt);        
-    }
+}
 
 .header-logo-blue {
         color: var(--act-link-txt);        
-        }
+}
 
 .header-menu {
     display: flex;
-    }
+}
 
 .header-m-item {    
     margin-right: 50px;
-}
-
-.header-m-item:last-child {
+    &:last-child {
     margin-right: 0;
+    }
 }
 
 .header-link {
@@ -49,20 +48,19 @@
         transition: color var(--trnstn);
         
         .current {
-    color: var(--act-link-txt);
-    }
-    }
+        color: var(--act-link-txt);
+        }
 
-.header-link:hover,
-.header-link:focus {
-    color: var(--act-link-txt);
+        &:hover,
+        &:focus {
+        color: var(--act-link-txt);
+        }
 }
 
 .current {
     position: relative;
-}
 
-.current::after {
+    &::after {
     position: absolute;
     content: '';
     width: 100%;
@@ -71,6 +69,7 @@
     left: 0px;
     bottom: 0px;
     background-color: #2196F3;
+    }
 }
 
 .header-contact {
@@ -82,27 +81,42 @@
     margin-right: 50px;
 }
 
-.header-mail,
-.header-tel {
-        display: flex;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        align-items: center;
+.header-mail {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
 
-        font-weight: 500;        
-        line-height: calc(16/14);
-        letter-spacing: 0.02em; 
-        color: var(--hd-cont-txt);
+    font-weight: 500;        
+    line-height: calc(16/14);
+    letter-spacing: 0.02em; 
+    color: var(--hd-cont-txt);
 
-        transition: color var(--trnstn);
+    transition: color var(--trnstn);
         
-        }    
+    &:hover,
+    &:focus {
+        color: var(--act-link-txt);
+        }
+}
+        
+.header-tel {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
 
-.header-mail:hover,
-.header-tel:hover,
-.header-mail:focus,
-.header-tel:focus {
-    color: var(--act-link-txt);
+    font-weight: 500;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--hd-cont-txt);
+
+    transition: color var(--trnstn);
+
+    &:hover,
+    &:focus {
+        color: var(--act-link-txt);
+        }
 }
 
 .mail-icon,

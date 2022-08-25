@@ -29,15 +29,15 @@
     border-radius: 4px;
 
     transition: border-color var(--trnstn);
-}
-
-.client-m-link:hover,
-.client-m-link:focus {
+    
+    &:hover,
+    &:focus {
     border-color: var(--act-link-txt);
 
-    .client-icon {
-        fill: var(--act-link-txt);
+        .client-icon {
+            fill: var(--act-link-txt);
         }
+    }
 }
 
 .client-icon {

@@ -7,7 +7,7 @@
     .container {
     display: flex;
     align-items: baseline;
-}
+    }
 }
 
 .column-one {
@@ -36,10 +36,9 @@
 
 .footer-m-item {
     display: block;
-}
-
-.footer-m-item:not(:last-child) {
+    &:not(:last-child) {
     margin-bottom: 9px;
+        }
 }
 
 .footer-map {
@@ -47,23 +46,35 @@
     color: var(--act-btn-txt);
 
     transition: color var(--trnstn);
+
+    &:hover,
+    &:focus {
+        color: var(--act-link-txt);
+        }
 }
 
-.footer-mail,
+.footer-mail {
+    line-height: calc(24/14);
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--trnstn);
+
+    &:hover,
+    &:focus {
+        color: var(--act-link-txt);
+        }
+}
+
 .footer-tel {
     line-height: calc(24/14);
     color: rgba(255, 255, 255, 0.6);
 
     transition: color var(--trnstn);
-}
 
-.footer-map:hover,
-.footer-map:focus,
-.footer-mail:hover,
-.footer-tel:hover,
-.footer-mail:focus,
-.footer-tel:focus {
-    color: var(--act-link-txt);
+    &:hover,
+    &:focus {
+        color: var(--act-link-txt);
+        }
 }
 
 .column-two {
@@ -100,11 +111,11 @@
     background: rgba(255, 255, 255, 0.1);
 
     transition: background-color var(--trnstn);
-}
 
-.join-social-link:hover,
-.join-social-link:focus {
-    background-color: #2196F3;
+    &:hover,
+    &:focus {
+        background-color: #2196F3;
+        }
 }
 
 .join-social-icon {
@@ -139,19 +150,19 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition: border-color var(--trnstn);
-}
+    
+    &:hover,
+    &:focus {
+        border-color: var(--act-link-txt);
+        }
 
-.subscriber-field:hover,
-.subscriber-field:focus {
-    border-color: var(--act-link-txt);
-}
-
-.subscriber-field::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20/16);
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20/16);
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        }
 }
 
 .subscriber-button {
