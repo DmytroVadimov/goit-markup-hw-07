@@ -6,6 +6,19 @@
     text-decoration: none;
 }
 
+.logo {
+    display: inline-block;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+}
+
+.logo-blue {
+    color: var(--act-link-txt);
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -24,3 +37,4 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+
