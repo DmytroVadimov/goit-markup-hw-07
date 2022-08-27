@@ -193,7 +193,7 @@ img {
   background-size: cover;
 }
 
-.solutions-title {
+.solutions__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -203,7 +203,7 @@ img {
   color: var(--act-btn-txt);
 }
 
-.solutions-button {
+.solutions__button {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid transparent;
@@ -222,18 +222,18 @@ img {
   border-color: var(--hero-bcg);
 }
 
-.benefits-menu {
+.benefits__menu {
   display: flex;
 }
 
-.benefits-m-item {
+.benefits__item {
   width: 270px;
   margin-right: 30px;
 }
-.benefits-m-item:last-child {
+.benefits__item:last-child {
   margin-right: 0;
 }
-.benefits-m-item::before {
+.benefits__item::before {
   display: block;
   content: "";
   height: 120px;
@@ -261,7 +261,7 @@ img {
   background-image: url(../images/astronaut_4.svg);
 }
 
-.benefits-title {
+.benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -269,7 +269,7 @@ img {
   text-transform: uppercase;
 }
 
-.benefits-text {
+.benefits__text {
   line-height: 1.7142857143;
   color: var(--hd-cont-txt);
 }
@@ -279,11 +279,7 @@ img {
   border-color: var(--hero-bcg);
 }
 
-.doing-menu {
-  display: flex;
-}
-
-.doing-title {
+.doing__title {
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
@@ -291,15 +287,19 @@ img {
   line-height: 1.1666666667;
 }
 
-.doing-item {
+.doing__menu {
+  display: flex;
+}
+
+.doing__item {
   margin-right: 30px;
   position: relative;
 }
-.doing-item:last-child {
+.doing__item:last-child {
   margin-right: 0;
 }
 
-.doing-label {
+.doing__label {
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -324,22 +324,22 @@ img {
   background-color: var(--team-bcg);
 }
 
-.team-menu {
-  display: flex;
-}
-
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-title {
+.team__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666666667;
 }
 
-.team-member {
+.team__menu {
+  display: flex;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__member {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--act-btn-txt);
@@ -347,27 +347,27 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-m-title {
+.team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
 }
 
-.team-text {
+.team__skill {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.1875;
   color: var(--hd-cont-txt);
 }
 
-.team-social {
+.social {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team-social-link {
+.social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -376,14 +376,14 @@ img {
   justify-content: center;
   transition: background-color var(--trnstn);
 }
-.team-social-link:hover, .team-social-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--act-link-txt);
 }
-.team-social-link:hover .team-social-icon, .team-social-link:focus .team-social-icon {
+.social__link:hover .social__icon, .social__link:focus .social__icon {
   fill: var(--act-btn-txt);
 }
 
-.team-social-icon {
+.social__icon {
   fill: #afb1b8;
   transition: fill var(--trnstn);
 }
@@ -393,7 +393,7 @@ img {
   padding-bottom: 94px;
 }
 
-.client-title {
+.client__title {
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
@@ -401,13 +401,13 @@ img {
   line-height: 1.1666666667;
 }
 
-.client-menu {
+.client__menu {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client-m-link {
+.client__link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -417,14 +417,14 @@ img {
   border-radius: 4px;
   transition: border-color var(--trnstn);
 }
-.client-m-link:hover, .client-m-link:focus {
+.client__link:hover, .client__link:focus {
   border-color: var(--act-link-txt);
 }
-.client-m-link:hover .client-icon, .client-m-link:focus .client-icon {
+.client__link:hover .client-icon, .client__link:focus .client-icon {
   fill: var(--act-link-txt);
 }
 
-.client-icon {
+.client__icon {
   fill: #afb1b8;
   transition: fill var(--trnstn);
 }
