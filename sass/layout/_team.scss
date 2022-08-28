@@ -50,33 +50,20 @@
 
 }
 
-.social {
-    display: flex;
+.team--menu {
     justify-content: center;
-    gap: 10px;
-}
+    }
 
-.social__link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.team--link {
     transition: background-color var(--trnstn);
-    
-    &:hover,
-    &:focus {
-        background-color: var(--act-link-txt);
-
-        .social__icon {
+        
+        .team--icon {
             fill: var(--act-btn-txt);
         }
     }
 }
 
-.social__icon {
+.team--icon {
     fill: #afb1b8;
 
     transition: fill var(--trnstn);

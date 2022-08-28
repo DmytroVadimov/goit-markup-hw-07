@@ -297,7 +297,7 @@
       <div class="container">
         <div class="contact">
           <!--logo-->
-          <a class="footer-logo link" href="./index.html">
+          <a class="logo footer__logo link" href="./index.html">
             <span class="logo-blue">Web</span>Studio
           </a>
           <!--address-->
@@ -323,32 +323,33 @@
             </ul>
           </address>
         </div>
+        <!--join-->
         <div class="join">
           <h3 class="join__title">присоединяйтесь</h3>
-          <ul class="join__social list">
+          <ul class="social list">
             <li class="join__item">
-              <a class="join__link link" href="">
+              <a class="social__link join__link link" href="">
                 <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram_2"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join__link link" href="">
+              <a class="social__link join__link link" href="">
                 <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter_2"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join__link link" href="">
+              <a class="social__link join__link link" href="">
                 <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook_2"></use>
                 </svg>
               </a>
             </li>
             <li class="join__item">
-              <a class="join__link link" href="">
+              <a class="social__link join__link link" href="">
                 <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin_2"></use>
                 </svg>
@@ -356,23 +357,19 @@
             </li>
           </ul>
         </div>
+        <!--subscriber-->
         <div class="subscriber">
           <h3 class="subscriber__title">Подпишитесь на рассылку</h3>
           <form class="subscriber__form">
-            <label for="subscriber-email"></label>
             <input
               class="subscriber__field"
               type="email"
               name="email"
-              id="subscriber-email"
               placeholder="E-mail"
             />
             <button class="subscriber__button" type="submit">
-              Подписаться<svg
-                class="subscriber__form__icon"
-                width="24"
-                height="24"
-              >
+              <span class="subscriber__label">Подписаться</span>
+              <svg class="subscriber__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
